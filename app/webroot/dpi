@@ -1,0 +1,12 @@
+2016-03-14 14:20:13 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:13 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:13 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:13 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:15 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:15 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:15 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:15 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:27 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:27 Critical: Unable to get routeable content types: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:27 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+2016-03-14 14:20:27 Critical: Errors in CakeErrorController: Database connection "SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.

@@ -1,0 +1,174 @@
+
+#menu {
+    position:relative;
+	z-index:5;
+}
+#menu .menu {width:100%; height:40px; padding:0}
+#menu * {
+    list-style:none;
+    border:0;
+    padding:0;
+    margin:0;
+}
+#menu a {
+    display:block;
+    padding-left:13px;
+}
+#menu a span {
+    display:block;
+    padding:6px 14px 10px 2px;
+    white-space:nowrap;
+}
+#menu li {
+    float:left;
+	border: 1px solid #e7e5e6;
+	-moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; border-radius:5px;
+	margin-right:3px;
+	/*background-color: #323232;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#323232), to(#1d1d1d));
+	background-image: -moz-linear-gradient(top, #323232 0%, #1d1d1d 100%);
+	background-image: -o-linear-gradient(top, #323232 0%, #1d1d1d 100%);
+	background-image: -ms-linear-gradient(top, #323232 0%, #1d1d1d 100%);
+	background-image: linear-gradient(top, #323232 0%, #1d1d1d 100%);
+	background-repeat: no-repeat;*/
+}
+#menu li li { float:none; border:none }
+#menu div {
+    display:none;
+    position:absolute;
+    margin-top:-5px;
+    width:200px;
+}
+#menu div a span{color:#fff}
+#menu div ul { position:relative; }
+#menu li:hover>div { display:block; }
+
+/** ie7 */
+*:first-child+html #menu li:hover>div { top:auto; }
+
+#menu a, 
+#menu a span {
+    font-size:1em;
+    line-height:1.6em;
+    color:#000;
+    text-decoration:none;
+    text-transform:capitalize!important;
+    font-weight:normal;
+}
+
+#menu div a span {
+    text-transform:none;
+    font-size:.85em;
+    white-space:normal;
+}
+
+#menu div ul {
+    width:200px;
+}
+#menu.active a {
+    z-index:780;
+    position:relative;
+}
+#menu.active li { z-index:778; }
+#menu.active div div { z-index:781; }
+#menu.active div a { position:static; }
+
+#menu.active li.back {
+	background:#f19300;
+    height:40px;
+    position:absolute;
+    padding:0;
+    margin:0;
+}
+#menu.active li.back .left {
+    display:block;
+    padding:0;
+    width:auto;
+	background:#f19300;
+    height:40px;
+    margin:0 5px 0 8px;
+    position:relative;
+    left:5px;
+    
+}
+
+#menu.active .spanbox {
+    position:absolute;
+    display:none;
+    margin-top:-5px;
+    width:200px;
+}
+#menu.active div {
+    margin-top:0;
+    display:block;
+    position:relative;
+}
+#menu.active div .spanbox {
+    margin:0 0 0 -6px;
+    left:100%;
+}
+#menu.active .spanbox .spanbox { margin-top:-50px; }
+#menu.active .spanbox .spanbox div { margin:-2px 0 0 0; }
+
+/** ie7 */
+*:first-child+html #menu.active div div { top:auto; }
+*:first-child+html .menu-images-preloading { visibility:hidden; }
+
+/*------------*/
+#menu a.parent span {
+    background:url(../images/arrow.png) no-repeat right center !important;
+}
+#menu>ul>li:hover>a.parent span, 
+#menu a.parent:hover span{
+	background-position:right bottom !important
+}
+#menu a{padding:3px 4px 3px}
+#menu a span{padding:0}
+#menu a.parent{padding-right:5px}
+#menu a.parent span{padding:0 30px 0 0}
+#menu.active li.back .left,
+#menu.active li.back{
+	height:30px; 
+	-moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; border-radius:5px;
+}
+#menu.active li.current-back, 
+#menu.active li.current-parent-back { background:#dd8702; }
+#menu.active li.current-back .left { background:#dd8702; }
+#menu.active li.current-parent-back .left { background:#dd8702;}
+/*======= sub =======*/
+#menu.active .spanbox{margin:0}
+#menu.active .spanbox .spanbox{margin:-32px 0 0; padding-left:5px;}
+#menu div{
+	background:none;
+	padding:5px 0 0 0;
+}
+
+#menu div ul{
+	padding:5px 0;
+	background:#dd8702;
+	-moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px; border-radius:5px;
+}
+#menu div ul li { border-bottom: 1px solid #FFF; }
+#menu div a,
+#menu div a.parent{
+	width:185px;
+	padding:0 5px 0 10px;
+	margin:0;
+}
+#menu div a span,
+#menu div a.parent span{
+	font-size:.85em;
+	padding:0 25px 0 0;
+	margin:0;
+}
+#menu div a.parent span{background:url(../images/arrow2.png) no-repeat right 4px !important}
+
+#menu div a:hover,
+#menu div ul>li:hover>a.parent, 
+#menu div ul li a.parent:hover {
+    background-color:rgb(147,89,0);
+}
+#menu div ul>li:hover>a.parent span, 
+#menu div ul li a.parent:hover span { background-position:right -21px !important; }
+
+

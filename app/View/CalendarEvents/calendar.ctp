@@ -1,0 +1,1 @@
+﻿<?php echo $this->Calendar->calendar($year, $month, $event_data, $weekends); ?>

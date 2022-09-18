@@ -1,0 +1,101 @@
+@media(min-width:320px) and (max-width:667px){
+	.container_12 .grid_6, .container_16 .grid_8 {
+		text-align: center;
+		width: 100%;
+	}
+	#header .header-right {
+		float: right;
+		text-align: center;
+	}
+	.dashboardList li a em {
+		width: 94%;
+	}
+	.mobileMenu {
+		cursor: pointer;
+		color: #fff;
+		font-size: 1.3em;
+		font-weight: bold;
+		line-height: 1.5em;
+		border: 1px solid red;
+		padding-left: 5px;
+		background:#f00606 url(../img/navOpenClose-bg.png) no-repeat right center;
+		position:relative;
+		display:block;
+	}
+	
+	#nav ul{
+		display: none;
+	}
+	#nav ul li{
+		width: 100%;
+		text-align: left;
+	}
+	#nav ul li a{
+		float: none;
+		margin-right: 0;
+	}
+	#nav ul.sf-menu.sf-js-enabled{
+		/*margin-top: 30px;*/
+	}
+	.dashboardContent{
+		width: 100% !important;
+		float: none !important; 
+	}
+	.dashboardList li {
+		margin: 60px 5px;
+	}
+	.canvasjs-chart-canvas{
+		position: inherit;
+	}
+	.chart{
+		width: 100% !important;
+		float: none !important;
+	}
+	.canvasjs-chart-canvas{
+		position: relative !important;
+	}
+	.dashboardList li a{
+		text-align: center;
+	}
+	#nav{
+		padding: 10px 0;
+	}
+	.sf-menu{
+		background: #333;
+	}
+	.sf-menu ul li ul{
+		display: none;
+	}
+	.sf-menu li:hover {
+		visibility: visible;
+	}
+	.sf-menu ul {
+		display: none;
+		position: relative !important;
+		top: -2px !important;
+		width: 100% !important;
+	}
+	#nav ul ul,
+	#nav ul ul ul{
+		display: none;
+	}
+	#nav ul ul li,
+	#nav ul ul ul li{
+		width:95% !important;
+		padding-left:5% !important;
+	}
+	#nav ul ul ul{
+		left: auto !important;
+		right: auto !important;
+	}
+	#header{
+		overflow: hidden;
+	}
+
+}
+
+@media(min-width:667px) and (max-width:991px){
+	.dashboardList li a{
+		font-size: 12px;
+	}
+}

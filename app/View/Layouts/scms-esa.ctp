@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <title><?php echo $title_for_layout; ?></title>
+
+            <?php
+            echo $this->Html->css(array(
+                //default
+                'reset',
+                '960',
+                '/ui-themes/smoothness/jquery-ui.css',
+                'admin',
+                'thickbox',
+                //student layout
+                '/students_tmp_design/css/style',
+                '/css/result', //common for both front & back;
+                '/students_tmp_design/fonts/ROCKB/fonts',
+                '/students_tmp_design/fonts/myriadProlight/stylesheet',
+                '/students_tmp_design/css/uniform.default',
+		'/css/fonts',
+            ));
+
+            echo $this->Layout->js();
+            echo $this->Html->script(array(
+                //student layout
+                //'/students_tmp_design/js/jquery-1.8.2.min',
+               'jquery/jquery.min',
+               '/students_tmp_design/js/jquery.uniform.js',
+               'jquery/jquery-ui.min',
+                'jquery/jquery.slug',
+               'jquery/jquery.cookie',
+                'jquery/jquery.hoverIntent.minified',
+                'jquery/superfish',
+                'jquery/supersubs',
+                'jquery/jquery.tipsy',
+                'jquery/jquery.elastic-1.6.1',
+                'jquery/thickbox-compressed',
+                'admin',
+                '/students_tmp_design/js/js',
+            ));
+
+
+
+            echo $this->Blocks->get('css');
+            echo $this->Blocks->get('script');
+            ?>
+            <script type="text/javascript">docRoot = '<?php echo $this->Html->url('/', true); ?>';</script>
+    </head>
+    <body> 
+        <div id="wrapper">
+<?php echo $this->element('admin/header'); ?>
+
+            <div id="nav-container">
+                <div class="container_16">
+<?php echo $this->element("admin/navigation"); ?>
+                </div>
+            </div>
+
+            <div id="main" class="container_16">
+                <div class="grid_16">
+                    <div id="content">
+<?php
+echo $this->Layout->sessionFlash();
+echo $content_for_layout;
+?>
+                    </div>
+                </div>
+                <div class="clear">&nbsp;</div>
+            </div>
+
+            <div class="push"></div>
+        </div>
+
+<?php echo $this->element('admin/footer'); ?>
+<?php
+echo $this->Blocks->get('scriptBottom');
+echo $this->Js->writeBuffer();
+?>
+    </body><!-- end of fromwrapper-->
+</html>

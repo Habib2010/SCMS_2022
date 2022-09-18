@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media print
+  {
+  .btnWrap2{display:none}
+  .admitWrap{margin-top:0}
+  }
